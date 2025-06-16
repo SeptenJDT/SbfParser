@@ -5,6 +5,8 @@
 # SbfParser
 A Python module to parse output of Septentrio receiver, including Septentrio Binary Format (SBF) & more !
 
+This project is an update of [PySbf](https://github.com/jashandeep-sohi/pysbf) made by [Jashandeep-Sohi](https://github.com/jashandeep-sohi) & [Nodd](https://github.com/Nodd) and [SbfParser](https://github.com/MJeanneRose/sbfParser) made by [MJeanneRose](MJeanneRose). 
+
 ### Install
 
 ```bash
