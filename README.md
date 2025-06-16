@@ -11,6 +11,10 @@ A Python module to parse output of Septentrio receiver, including Septentrio Bin
 # Install build dependencies
 sudo apt install gcc python3 python3-pip python3-venv
 
+# Clone project
+git clone https://github.com/septentrio-gnss/SbfParser
+cd SbfParser
+
 # Create and activate virtual environment
 python3 -m venv venv
 source venv/bin/activate
@@ -21,10 +25,10 @@ pip install -e .
 
 ## Release Notes
 
-* 2x faster than [SbfParser](https://github.com/MJeanneRose/sbfParser), about 
+* 2x faster than [SbfParser](https://github.com/MJeanneRose/sbfParser) (12mo/s)
 * Parsing based on SBF v4.14.10.1, including more than 35 blocks
 * Can encode sbf message
-* Lossless decoding, all inputs can be re-encoded
+* Lossless decoding, get raw binary of decoded messages
 
 ## Usage
 ### Parsing input stream
