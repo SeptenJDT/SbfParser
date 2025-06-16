@@ -1,0 +1,17 @@
+__pycache__/
+*.so
+*.c
+!c_crc.c
+*.pyc
+*.txt
+build/
+.env
+.venv
+env/
+venv/
+test/
+dist/
+*.egg-info/
+example/local_files/*
+utils/local_files/*
+logs

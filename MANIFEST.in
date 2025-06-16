@@ -1,0 +1,6 @@
+include sbf_parser/*.pxd
+include sbf_parser/*.pyx
+include sbf_parser/*.c
+include sbf_parser/*.h
+include LICENSE
+include README.md 
