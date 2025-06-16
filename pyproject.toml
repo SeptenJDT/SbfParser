@@ -10,7 +10,7 @@ authors = [
     {name = "Jashandeep Sohi", email = "jashandeep.s.sohi@gmail.com"},
     {name = "Marco Job", email = "marco.job@bluewin.ch"},
     {name = "Méven Jeanne-Rose", email = "meven.j.r@gmail.com"},
-    {name = "Louis-Max", email = "louis-max.harter@protonmail.com"}
+    {name = "Louis-Max Harter", email = "louis-max.harter@protonmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.7"

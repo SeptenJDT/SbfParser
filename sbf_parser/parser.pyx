@@ -2,6 +2,8 @@
 # Initial code by Jashandeep Sohi (2013, jashandeep.s.sohi@gmail.com)
 # adapted by Marco Job (2019, marco.job@bluewin.ch)
 # Update Meven Jeanne-Rose 2023
+# Update Louis-Max Harter 2025
+
 
 from .block_structure import BLOCKNAMES, BLOCKNUMBERS
 from .block_parsers cimport BLOCKPARSERS
