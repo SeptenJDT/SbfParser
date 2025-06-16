@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="SBF Parser Logo">
+  <img src="sbf_parser_logo_white.png" alt="SBF Parser Logo">
 </div>
 
 # SBF_PARSER
