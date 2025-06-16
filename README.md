@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="sbf_parser_logo_white.png" alt="SBF Parser Logo">
+  <img src="sbf_parser_white.png" alt="SBF Parser Logo">
 </div>
 
-# SBF_PARSER
+# SbfParser
 A Python module to parse output of Septentrio receiver, including Septentrio Binary Format (SBF) & more !
 
 ### Install
