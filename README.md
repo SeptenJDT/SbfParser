@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="sbf_parser_white.png" alt="SBF Parser Logo">
+  <img src="https://github.com/septentrio-gnss/SbfParser/blob/master/sbf_parser_white.png" alt="SBF Parser Logo">
 </div>
 
 # SbfParser
