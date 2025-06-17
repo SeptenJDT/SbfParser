@@ -9,6 +9,12 @@ This project is an update of [PySbf](https://github.com/jashandeep-sohi/pysbf) m
 
 ### Install
 
+Using `pip` :
+```bash
+pip install sbf-parser
+```
+
+From source :
 ```bash
 # Install build dependencies
 sudo apt install gcc python3 python3-pip python3-venv
