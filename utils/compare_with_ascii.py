@@ -5,7 +5,7 @@ import re
 import sys
 
 sbf_file = "all_blocks_0000.sbf"
-sbf_path = f"../sbf_files/{sbf_file}"
+sbf_path = f"./{sbf_file}"
 
 SUB_BLOCKS_NAME = {
     "MeasExtra": ("MeasExtraChannel", "MeasExtraChannelSub"),
@@ -263,7 +263,7 @@ def compare(a, b, test_name=""):
 def compare_blocks(block_name, json_blocks):
     try:
         # Find ascii file corresponding
-        pattern = f"./sbf2asc/{sbf_file}_SBF_{block_name}*.txt"
+        pattern = f"./ascii/{sbf_file}_SBF_{block_name}*.txt"
         matching_files = glob.glob(pattern)
         if len(matching_files) > 1:
             raise VerificationError(

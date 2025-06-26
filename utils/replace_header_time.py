@@ -30,24 +30,31 @@ def main():
     parser.add_argument("-G", "--max-gap", type=int, default=1500, help="Maximum gap between blocks in milliseconds")
     parser.add_argument("-g", "--min-gap", type=int, default=1, help="Minimum gap between blocks in milliseconds")
     parser.add_argument("-dg", "--default-gap", type=int, default=1000, help="Default gap between blocks in milliseconds")
-    parser.add_argument("--blocks", nargs="+", default=["BBSamples", "ReceiverStatus"], help="Block types to process")
+    parser.add_argument("--blocks", default=["BBSamples", "ReceiverStatus"], help="Block types to process")
     
     args = parser.parse_args()
     
     # Filter blocks
+    blocks = args.blocks.split("+")
     selection = []
     analysis = {}
     
     for block_type, infos in sbf_parser.read(args.input_file):
         analysis[block_type] = analysis.get(block_type, 0) + 1
 
-        if block_type in args.blocks:
+        if block_type in blocks:
             selection.append(infos)
 
     # Analysis
-    print("Block decoded:")
-    for name, n in sorted(list(analysis.items())):
-        print(f"\t{name:20} : {n:4d}")
+    print("Block selected:")
+    for name in sorted(blocks):
+        print(f"\t{name:20} : {analysis.get(name, 0):4d}")
+    print()
+
+    print("Block filtered:")
+    for name, n in sorted(analysis.items()):
+        if name not in blocks:
+            print(f"\t{name:20} : {n:4d}")
     print()
 
     # Check if blocks
