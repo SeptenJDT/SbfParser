@@ -3,12 +3,6 @@ import argparse
 import sys
 import sbf_parser
 
-
-"""
-python replace_header_time.py input.sbf -o processed.sbf -s 100000 -d 30000 -G 2000 -g 100 -dg 1200 --blocks BBSamples ReceiverStatus"
-"""
-
-
 class WideArgumentDefaultsHelpFormatter(argparse.ArgumentDefaultsHelpFormatter):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, width=140, **kwargs)
@@ -32,6 +26,11 @@ def main():
     parser.add_argument("-dg", "--default-gap", type=int, default=1000, help="Default gap between blocks in milliseconds")
     parser.add_argument("--blocks", default=["BBSamples", "ReceiverStatus"], help="Block types to process")
     
+    """
+    python replace_header_time.py input.sbf -o processed.sbf -s 100000 -d 30000 -G 2000 -g 100 -dg 1200 --blocks BBSamples+ReceiverStatus"
+    """
+
+
     args = parser.parse_args()
     
     # Filter blocks

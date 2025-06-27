@@ -16,18 +16,6 @@ pip install sbf-parser
 
 From source :
 ```bash
-# Install build dependencies
-sudo apt install gcc python3 python3-pip python3-venv
-
-# Clone project
-git clone https://github.com/septentrio-gnss/SbfParser
-cd SbfParser
-
-# Create and activate virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# Install package
 pip install -e .
 ```
 
@@ -126,6 +114,12 @@ PAYLOAD_PRIORITY_ONLY_NOT_IMPLEMENTED = -2 # Use payload only for not implemente
 PAYLOAD_PRIORITY_NO_PAYLOAD = -3 # Never use payload
 ```
 
+## Utils
+You can also use some script in `utils/` to edit your sbf files :
+- `split_sbf_file` : Split Sbf file using two `TOW`
+- `replace_herder_time` : Change the value of `TOW`, usefull when your receiver is not connected to satellites during recording
+- `benchmark` : If you want to stress test SbfParser
+- `compare_with_ascii` : Compare Sbf block with ascii given by RxTools
 
 ## FAQ
 

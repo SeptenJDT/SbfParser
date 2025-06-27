@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import sbf_parser
+from sbf_parser import load
 
 def get_binary_file(filename):
     with open(filename, "rb") as f:
