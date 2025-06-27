@@ -25,7 +25,7 @@ def main():
     
     parser.add_argument("input_file", help="Input SBF file path")
     parser.add_argument("-o", "--output", default="output.sbf", help="Output SBF file path")
-    parser.add_argument("-s", "--start-time", type=int, default=130000, help="Start time in milliseconds")
+    parser.add_argument("-s", "--start-time", type=int, default=0, help="Start time in milliseconds")
     parser.add_argument("-d", "--duration", type=int, default=0, help="Target duration in milliseconds (0 = keep original duration)")
     parser.add_argument("-G", "--max-gap", type=int, default=1500, help="Maximum gap between blocks in milliseconds")
     parser.add_argument("-g", "--min-gap", type=int, default=1, help="Minimum gap between blocks in milliseconds")
