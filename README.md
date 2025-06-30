@@ -33,6 +33,11 @@ You have many examples in `example` directory :
 - Decoding input streaming : `decode.py`, `decode_with_memory.py`
 - Save parser state between calls : `memory_manipulation.py`
 - Encoding of sbf blocks : `create_complex_block.py`, `create_simple_block.py`
+And somes tools in `utils`
+- Split sbf files : `split_sbf_file.py`
+- Re-order sbd time of week : `replace_header_time.py`
+- Speed benchmark : `benchmark.py`
+- Compare result of SbfParser with Septentrio sbf2ascii : `comapre_with_ascii.py`
 
 ```python
 import serial
