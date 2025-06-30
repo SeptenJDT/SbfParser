@@ -1,4 +1,4 @@
-# Initial code by Louis-Max using Claude (2023)
+# Initial code by Louis-Max (2023)
 # Based on the sbfPythonParser by Jashandeep Sohi, Marco Job, and Meven Jeanne-Rose
 
 from libc.stdint cimport uint8_t, uint16_t, uint32_t, uint64_t, int8_t, int16_t, int32_t, int64_t
