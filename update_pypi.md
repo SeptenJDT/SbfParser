@@ -32,5 +32,11 @@ python3 -m twine upload dist/*
 ```
 
 ### Test SbfParser package
+Remove old venv,
+rm -R venv
+python -m venv venv
+pip install sbf_parser
+cd example
+python3 decode.py
 
-pip install sbf-parser
+Proper unit tests and github workflow should be used rather than manual testing.
