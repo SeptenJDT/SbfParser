@@ -4,8 +4,8 @@ import fcntl
 import time
 import serial  # Optional, if you want to use pyserial for configuration
 
-#serial_port = '/dev/ttyACM0' # If the mosaic is connected to USB ; Use ttyACM1 for the second virtual com port
-serial_port = '/dev/ttyAMA0' # If the mosaic is connected to COM1 of the Pi
+serial_port = '/dev/ttyACM0' # If the mosaic is connected to USB ; Use ttyACM1 for the second virtual com port
+#serial_port = '/dev/ttyAMA0' # If the mosaic is connected to COM1 of the Pi
 
 # Open the serial port
 serial_fd = os.open(serial_port, os.O_RDONLY | os.O_NONBLOCK)
